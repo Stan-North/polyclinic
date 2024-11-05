@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 @Component
 @Slf4j
 public class Cashier {
-    private static final String INCOME_MESSAGE = "Доходы составил : %s";
+    private static final String INCOME_MESSAGE = "Доходы составили : %s";
     private BigDecimal income = BigDecimal.ZERO;
 
     public void takePayment(BigDecimal payment) {
@@ -18,5 +18,4 @@ public class Cashier {
     public void printIncome() {
         log.info(String.format(INCOME_MESSAGE, income));
     }
-
 }
